@@ -1,0 +1,217 @@
+// -------视频设置---------
+
+// -------音频设置---------
+// -------音频
+volume 1 					//主音量(0~1)
+snd_menumap_volume 1 		//主菜单环境音量(0~1)
+snd_headphone_eq 0			 //均衡器简介(0--自然，1--清脆，2--平滑)
+snd_spatialize_lerp 0			 //左右声道独立(0~1)
+snd_steamaudio_enable_perspective_correction 1		 //透视矫正(0--否，1--是)
+snd_mute_losefocus 0 			//当游戏处于背景时播放音频(0--播放音频，1--静音)
+// -------语音
+snd_voipvolume 1 			//其他玩家的语音音量
+voice_modenable 1 			//语音/麦克风模式(0--禁用，1--按键通话)
+voice_loopback 0 				//监听我自己的声音(0--关闭，1--开启)
+voice_always_sample_mic 0		 //简化按键通话(0--否，1--是)
+voice_threshold -120			 //麦克风触发阈值
+// -------音乐
+snd_menumusic_volume  0.01		 //主菜单音量
+snd_roundstart_volume 0 		//回合开始音量
+snd_roundaction_volume 0 		//回合开始行动音量
+snd_roundend_volume 0		 //回合结束音量
+snd_mvp_volume 0.04			 //MVP音量
+snd_mapobjective_volume  0.04	 //炸弹/人质音量
+snd_tensecondwarning_volume 0		 //十秒警告音量(0.04就是游戏设置中的20)
+snd_deathcamera_volume 0 			//死亡视角音量
+snd_mute_mvp_music_live_players 0		 //当双方团队成员都存活时关闭MVP音乐(0--否，1--是)
+
+// -------游戏设置---------
+// -------游戏
+con_enable 1 							//启用开发者控制台(0--否，1--是)
+mm_dedicated_search_maxping 100		 //最大匹配延迟
+rate 786432							 //最大游戏流量带宽(98304--极其受限，131072--低于1.0mbit/s，196608--不超过1.5Mbps，262144--不超过2.0Mbps，327680--不超过2.5Mbps，393216--3mbit/s，524288--4mbit/s，786432--不受限)
+cl_net_buffer_ticks 0 					//缓冲以消除数据包丢失/抖动(0--无，1--1个数据包，2--2个数据包)
+install_dlc_workshoptools_cvar 1 		//安装反恐精英创意工坊工具
+
+// -------HUD
+hud_scaling 1 						//HUD比例(0.9~1.1)
+cl_hud_color 0 						//HUD颜色(0--队伍颜色，1--白色，2--亮白色，3--淡蓝色，4--蓝色，5--紫色，6--红色，7--橙色，8--黄色，9--绿色，10--浅绿色，11--粉红色，12--玩家颜色)
+cl_teamcounter_playercount_instead_of_avatars 0			 //玩家大计数(0--迷你计分板显示玩家头像，1--显示数字)
+ui_steam_overlay_notification_position bottomleft 		//Steam通知区域(topleft--左上角, topright--右上角,  bottomleft-左下角，bottomright--右下角)
+ui_steam_overlay_notification_position_horz 0 			//社区通知水平偏移
+ui_steam_overlay_notification_position_vert 0				 //社区通知垂直偏移
+cl_weapon_selection_rarity_color 1						//按稀有度颜色显示武器发光效果：1--是，0--否
+
+// -------团队
+cl_teamid_overhead_mode 3			 //在HUD中显示队友位置、名字和装备(0--隔墙不显示队友，1--隔墙显示队友位置，2--隔墙显示队友位置和名字，3--隔墙显示队友位置、名字和装备)
+cl_teammate_colors_show 1 			//在竞技模式中显示玩家颜色(0--不显示，1--颜色，2--颜色和文字)
+cl_teamid_overhead_colors_show 1 		//在队伍ID上使用玩家颜色(0--否，1--是)
+lobby_default_privacy_bits2 1			 //好友默认房间权限(0--仅限受邀好友加入，1--所有好友均可加入)
+ui_setting_advertiseforhire_auto 1 		//当反恐精英启动时寻找队友 (0--禁用，1-记住上次状态，2--自动)
+
+// -------通讯
+cl_player_ping_mute 0					 //玩家标记(0--显示并播放声音，1--无声显示，2--禁用)
+cl_mute_enemy_team 0				 	//将敌人静音(0--否，1--是)
+cl_mute_all_but_friends_and_party 0		 //除好友外都静音(0--否，1--仅在非竞技模式中生效，2--总是)
+cl_allow_animated_avatars 0			 //允许使用动态头像(0--否，1--是)
+cl_hide_avatar_images 0 				//隐藏头像图片(0--全部显示，1--全部隐藏，2--只显示好友)
+cl_sanitize_player_names 0 				//清理玩家名称(0--否，1--是)
+
+// -------观察者/计分板
+spec_usenumberkeys_nobinds 1						 //观察者/地图投票数字选择方式(0--使用武器键位，1--使用数字键)
+cl_scoreboard_mouse_enable_binding +attack2 		//启用计分板鼠标/比赛结束计分板切换
+eom_local_player_defeat_anim_enabled 1				 //比赛结束本地玩家失败动画(0--已禁用，1--已启用)
+cl_scoreboard_survivors_always_on 0					 //总是显示生还者人数(0--否，1--是)
+cl_obs_interp_enable 1								 //平滑观察者视角(0--否，1--是)
+//cl_obs_interp_pos_rate 1							 //平滑观察者视角速度
+
+// -------物品
+cl_sniper_delay_unscope 0 					//狙击枪开枪后延迟开镜(0--否，1--是)
+cl_sniper_auto_rezoom 1					 //开枪后狙击步枪自动重新开镜(0--否，1--是)
+cl_silencer_mode 1						 //卸下M4A1-S和USP-S消音器(1--第二开火，0--已禁用)
+//viewmodel_presetpos 0 					//持枪视角(0--自定义，1--默认，2--经典)(写实视角预设已被删除)
+viewmodel_offset_x = 2.000000
+viewmodel_offset_y = 0.500000
+viewmodel_offset_z = -2.000000
+viewmodel_fov = 54.000000
+cl_prefer_lefthanded 0						//首选左/右手持枪视角(0--右手，1--左手)
+r_drawtracers_firstperson 1 				//第一人称追踪器(曳光弹)(0--已禁用，1--已启用)
+cl_showloadout 1 							//总是显示库存(右下角物品栏)(0--否，1--是)
+cl_use_opens_buy_menu 0 					//按"使用"键打开购买菜单(0--否，1--是)
+cl_buywheel_nonumberpurchasing 1 		//购买菜单数字键位(0--使用数字键位购买装备，1--忽略,由游戏本身处理)
+cl_buywheel_donate_key 0 					//捐赠武器快捷键 (0--左CTRL键，1--左ALT键，2--左SHIFT键)
+//cl_quickinventory_lastinv 1 					//装备轮盘上最近选择的武器(0--否，1--是)
+
+// -------雷达/平板
+cl_radar_always_centered 0 				//雷达保持玩家居中(0--否，1--是)
+cl_radar_rotate 0						 //雷达旋转(0--否，1--是)
+cl_hud_radar_map_additive 0			//雷达HUD地图与背景融合(0--否，1--是)
+cl_hud_radar_background_alpha 0.63	//雷达HUD背景透明度(0~1)
+cl_hud_radar_scale 1.3 					//雷达HUD大小(0.8~1.3)
+cl_radar_scale 0.5						 //雷达地图缩放(0.25~1)
+cl_radar_scale_alternate 1				 //雷达地图切换缩放(0.25~1)
+cl_radar_square_with_scoreboard 1		 //切换计分板外观(0--圆形，1--方形)
+cl_radar_scale_dynamic 0 				//雷达动态缩放(0--否，1--是)
+
+// -------准星
+cl_crosshair_sniper_width 2				//狙击枪开镜粗细，默认是1
+//apply_crosshair_code CSGO-yMQC3-cxP47-sEHUZ-wPSbC-LxwPB
+cl_crosshairstyle 4						 //准星风格(0--默认，1--默认静态，2--经典，3--经典动态，4--经典静态)
+cl_crosshair_friendly_warning 0 			//准星友军伤害警告(0--关闭，1--开启)
+cl_crosshair_recoil 0					 //跟随后坐力(0--否，1--是)
+cl_crosshairdot 1 						//中心点(0--否，1--是)
+cl_crosshairsize 1.4					 //长度
+cl_crosshairthickness 0.7				 //粗细
+cl_crosshairgap -3.2 					//间隙
+cl_crosshair_drawoutline 0 				//*轮廓开关*(0--关闭，1--开启)
+cl_crosshair_outlinethickness 0 			//轮廓厚度
+cl_crosshaircolor_r 0					//红(0~255)
+cl_crosshaircolor_g 255				 //绿(0~255)
+cl_crosshaircolor_b 0 					//蓝(0~255)
+cl_crosshairusealpha 1 					//*透明度开关*(0--关闭，1--开启)
+cl_crosshairalpha 255					 //透明度(0~255)
+cl_crosshair_t 0 						//T形准星(0--否，1--是)
+cl_crosshairgap_useweaponvalue 0 		//启用准星间距设置(0--否，1--是)
+cl_ironsight_usecrosshaircolor 0 		//使用与准星相同颜色的瞄准镜圆点准星(0--否，1--是)
+cl_show_observer_crosshair 2 			//显示玩家所用准星(0--否，1--好友及队友，2--所有人)
+cl_observed_bot_crosshair 2 			//观察电脑玩家时，显示我的准星(0--总是，1--当我可接管时，2--从不)
+
+// -------投掷物准星
+cl_grenadecrosshair_keepusercrosshair 1 //保持常规准星(0--否，1--是)
+cl_grenadecrosshair_flash 1 //使用闪光震撼弹时是否显示投掷物准星(0--否，1--是)
+cl_grenadecrosshairdelay_flash 2 //使用闪光震撼弹时投掷物准星延迟(最低为0，无上限)
+cl_grenadecrosshair_explosive 1 //使用高爆手雷时是否显示投掷物准星(0--否，1--是)
+cl_grenadecrosshairdelay_explosive 2 //使用高爆手雷时投掷物准星延迟(最低为0，无上限)
+cl_grenadecrosshair_fire 1 //使用燃烧瓶/燃烧弹时是否显示投掷物准星(0--否，1--是)
+cl_grenadecrosshairdelay_fire 2 //使用燃烧瓶/燃烧弹时投掷物准星延迟(最低为0，无上限)
+cl_grenadecrosshair_smoke 1 //使用烟雾弹时是否显示投掷物准星(0--否，1--是)
+cl_grenadecrosshairdelay_smoke 2 //使用烟雾弹时投掷物准星延迟(最低为0，无上限)
+cl_grenadecrosshair_decoy 1 //使用诱饵弹时是否显示投掷物准星(0--否，1--是)
+cl_grenadecrosshairdelay_decoy 2 //使用诱饵弹时投掷物准星延迟(最低为0，无上限)
+
+// -------伤害预测
+cl_predict_body_shot_fx 0 //预测击中身体的效果(0--否，1--是)
+cl_predict_head_shot_fx 0 //预测爆头的效果(0--否，1--是)
+cl_predict_kill_ragdolls 0 //预测击杀布娃娃效果(0--否，1--是)
+
+// -------遥测
+cl_hud_telemetry_frametime_show 2 //显示帧间时间及FPS(0--从不，1--如果条件恶劣，2--总是)
+cl_hud_telemetry_frametime_poor 100 // 帧间时间警告阈值(0~100)
+cl_hud_telemetry_ping_show 1 //显示延迟(0--从不，1--如果条件恶劣，2--总是)
+cl_hud_telemetry_net_misdelivery_show 1 //显示网络问题(0--从不，1--如果条件恶劣，2--总是)
+cl_hud_telemetry_net_misdelivery_poor 5 //网络tick丢失率警告阈值(0~5)
+cl_hud_telemetry_net_quality_graph_show 0 //显示网络抖动/误差图(0--从不，1--如果条件恶劣，2--总是)
+cl_hud_telemetry_net_detailed 0 // 使用详细的网络质量显示(0--从不，1--如果条件恶劣，2--总是)
+
+// -------键盘鼠标---------
+// -------键盘和鼠标设置
+mouse_inverty 0 //反转鼠标
+option_duck_method 0 //下蹲模式(0--按住，1--切换)
+option_speed_method 0 //行走模式(0--按住，1--切换)
+cl_debounce_zoom 1 //按住缩放按钮(开镜持续切换) (0--重复已开启，1--重复已禁用)
+sensitivity 0.85 //鼠标灵敏度
+zoom_sensitivity_ratio 0.8 //缩放灵敏度倍数(鼠标灵敏度*缩放灵敏度倍数=开镜灵敏度)
+
+// -------方向键
+bind "I" "show_loadout_toggle" //切换库存显示
+bind "W" "+forward" //向前移动
+bind "S" "+back" //向后移动
+bind "A" "+left" //向左移动(平移)
+bind "D" "+right" //向右移动(平移)
+bind "SHIFT" "+sprint" //行走
+bind "CTRL" "+duck" //下蹲
+bind "SPACE"    "+jump" //跳跃
+bind "mwheeldown"    "+jump" //跳跃
+
+// -------武器键位
+bind "E" "+use" //使用
+bind "MOUSE1" "+attack" //开火
+bind "MOUSE2" "+attack2" //第二开火
+bind "R" "+reload" //装填弹药
+//bind "键位" "+quickinv" //放射性武器菜单
+bind "" "invprev" //选择上一武器
+//bind "MWHEELDOWN" "invnext" //选择下一武器
+//bind "Q" "lastinv" //上次使用的武器
+bind "G" "drop" //丢弃武器
+bind "F" "+lookatweapon" //检视武器
+bind "Q" "switchhands" //切换左/右手持枪视角
+bind "B" "buymenu" //购买菜单
+bind "F3" "autobuy" //自动购买
+bind "F4" "rebuy" //重新购买
+bind "1" "slot1" //主武器
+bind "2" "slot2" //副武器
+bind "3" "slot3" //近战武器
+bind "4" "slot4" //切换投掷物
+bind "5" "slot5" //炸弹&陷阱
+bind "v" "slot6" //高爆手雷
+bind "c" "slot7" //闪光震撼弹
+bind "x" "slot8" //烟雾弹
+//bind "" "slot9" //诱饵弹
+bind "z" "slot10" //燃烧瓶
+bind "capslock" "slot11" //宙斯X27电击枪
+bind "o" "slot12" //治疗剂
+bind "T" "+spray_menu" //涂鸦菜单
+
+// -------UI键位
+bind "TAB" "+showscores" //计分板
+//bind "键位"  "+cl_show_team_equipment" //显示队友装备
+//bind "键位"  "toggleradarscale" //雷达缩放
+//bind "键位" "callvote" //发起投票
+bind "M" "teammenu" //选择队伍
+bind "`" "toggleconsole" //切换至控制台
+
+// -------聊天选项
+bind "MOUSE3" "player_ping" //玩家信号
+bind "k" "radio" //无线电报
+//bind "键位" "radio1" //命令类无线电消息
+//bind "键位" "radio2" //标准类无线电消息
+//bind "键位" "radio3" //报告类无线电消息
+bind "U" "messagemode2" //团队消息
+bind "Y" "messagemode" //聊天消息
+bind "MOUSE4" "+voicerecord" //使用麦克风
+bind "MOUSE5" "clutch_mode_toggle" //暂时禁止聊天
+
+// -------聊天轮盘快捷键
+bind "6" "+radialradio" //快捷聊天轮盘1
+bind "7" "+radialradio2" //快捷聊天轮盘2
+bind "8" "+radialradio3" //快捷聊天轮盘3
